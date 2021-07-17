@@ -1,0 +1,23 @@
+{
+  "name": "calculator-webapp",
+  "version": "1.0.0",
+  "description": "basic calculator webapp",
+  "main": "calculator.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thisisrajneel/Calculator-WebApp.git"
+  },
+  "author": "Rajneel Anuraj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thisisrajneel/Calculator-WebApp/issues"
+  },
+  "homepage": "https://github.com/thisisrajneel/Calculator-WebApp#readme"
+}
