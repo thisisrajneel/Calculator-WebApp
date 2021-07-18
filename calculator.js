@@ -1,8 +1,13 @@
+const { ESRCH } = require('constants');
 const express = require('express');
 const app = express();
 
 app.get('/', (req,res)=>{
     res.sendFile(__dirname + "/index.html");
+})
+
+app.post('/', (req,res)=>{
+    res.send('thanks for using the calculator!')
 })
 
 app.listen(3000, ()=>{
