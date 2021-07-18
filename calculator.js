@@ -6,7 +6,7 @@ app.use(bodyParser.urlencoded({extended:true}))
 
 app.get('/', (req,res)=>{
     res.sendFile(__dirname + "/index.html");
-})
+});
 
 app.post('/', (req,res)=>{
 
@@ -32,7 +32,19 @@ app.post('/', (req,res)=>{
     else {
         alert('enter ONLY ONE operation!');
     }
-})
+});
+
+app.get('/bmi', (req,res)=>{
+    res.sendFile(__dirname + "/bmiCalc.html")
+});
+
+app.post('/bmi', (req,res)=>{
+    var weight = parseFloat(req.body.w);
+    var height = parseFloat(req.body.h);
+
+    var bmi = weight/(height**2);
+    res.send(`Your BMI is ${bmi} !!`);
+});
 
 app.listen(3000, ()=>{
     console.log('server is running on port 3000');
